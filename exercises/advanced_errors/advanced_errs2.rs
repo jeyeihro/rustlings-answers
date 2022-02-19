@@ -208,7 +208,6 @@ mod test {
         );
     }
     #[test]
-    #[ignore]
     fn test_downcast() {
         let res = "São Paulo,-21,28.5".parse::<Climate>();
         assert!(matches!(res, Err(ParseClimateError::ParseInt(_))));
